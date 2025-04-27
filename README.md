@@ -1,126 +1,142 @@
-![License: ARKTIK Hybrid Education v3.0](https://img.shields.io/badge/License-ARKTIK_Hybrid_Education_v3.0-lightgrey.svg)
-> 💻 This repository launches a fully configured Rust development environment inside GitHub Codespaces. No local setup required. Experience ARKTIK’s luxury learning standard.
-
 # Real-World Rust: Algebra in Action  
+
 **An ARKTIK Curriculum for Education (A.C.E.) Proof of Concept Repository**
+
+---
+
+![License: ARKTIK Hybrid Education v3.0](https://img.shields.io/badge/License-ARKTIK_Hybrid_Education_v3.0-lightgrey.svg)
+
+> 💻 This repository provides a pre-configured Rust development environment inside GitHub Codespaces, enabling seamless setup for students and contributors. Experience ARKTIK’s luxury learning standard.
 
 ---
 
 ## 💻 About This Repository
 
-Welcome to **ARKTIK Curriculum for Education’s (A.C.E.)** first public proof-of-concept:  
-a living demonstration of **faith-driven**, **execution-based** education — where operational excellence, innovation, and stewardship meet.
+Welcome to **ARKTIK Curriculum for Education’s (A.C.E.)** first public proof-of-concept repository:  
+a living demonstration of **faith-driven**, **execution-based** education — where operational excellence, innovation, and stewardship converge.
 
-In this repository, you will find a complete real-world project designed for 6th–12th grade students in our **Gifted Track (GT)**, merging **Algebraic Foundations** with **Computational Logic** through the Rust programming language.
-
-This project is not theoretical.  
-It is **real engineering work** — prepared, executed, and delivered by students who are trained to think, build, and live differently under the principles of **Order, Excellence, and Truth**.
+This project is designed for 6th–12th grade students in our **Gifted Track (GT)** and integrates **Algebraic Foundations** with **Computational Logic** through a real-world programming challenge.
 
 ---
 
-## 💻 What This Project Demonstrates
-
-- **Operational Mastery**: Students set up their full development environment using GitHub Codespaces, Rust, and cargo.
-- **Real-World Application**: Students design and build a functional **Loan Calculator** system modeling algebraic concepts (compound interest, payments, user interfaces).
-- **Portfolio-Ready Artifacts**: Every student produces code, documentation, and professional GitHub practices they can showcase to colleges, employers, or future initiatives.
-- **Faith-Reason Alignment**: By practicing rigorous structure, order, and computational thinking, students mirror the deeper principles of design and stewardship that govern the universe.
-- **Public Proof**: This repository offers visible evidence that excellence in education, engineering, and faith can coexist—and thrive.
-
----
-
-## 💻 The Project: Real-World Rust | Loan Calculator
+## 💻 Project Overview: Real-World Rust | Loan Calculator
 
 **Scenario:**  
-_"A small bank has commissioned you to build a reliable, simple, user-friendly loan calculator that helps customers understand their payments and final obligations."_
+_A trusted institution tasks you with building a reliable, user-friendly loan calculator to help clients calculate their monthly payments and financial obligations._
 
-**Features Built by Students:**
-- User input handling (principal, rate, term)
-- Compound interest calculations
-- Monthly payment breakdowns
-- Clean command-line interface (CLI)
-- Error handling and data validation
-- Clear README and documentation
-- Professional GitHub commits and version history
+**What Students Will Build:**
+- Input handling for loan parameters (principal, interest rate, term).
+- Core mathematical logic for monthly payment calculations using compound interest formulas.
+- A clean and intuitive command-line interface (CLI).
+- Thoughtful error handling and data validation.
+- Documentation and professional version control practices.
+
+This project culminates in a **real-world application** that demonstrates operational mastery and produces portfolio-ready artifacts.
 
 ---
 
 ## 💻 Why This Matters
 
-In an era where many educational systems emphasize credentials over competence,  
-**ARKTIK Curriculum for Education** commits to a higher standard:
+In today’s world, where education often prioritizes theoretical knowledge over practical competence, **ARKTIK Curriculum for Education** takes a different approach:
 
-- Students must **do**, not just listen.
-- Knowledge must **produce operational outcomes**, not just test scores.
-- Faith must **inform and elevate execution**, not bypass discipline.
+- Students must **build systems**, not just memorize concepts.
+- Knowledge must **deliver operational outcomes**, not just test scores.
+- Faith must **elevate execution**, inspiring discipline and stewardship.
 
-This repository stands as a **witness**:  
-a tangible example that **faith, excellence, engineering, and stewardship** can walk together — building real systems, changing real lives.
+This repository stands as a testament to the transformative power of combining **excellence, engineering, and faith** to create meaningful, impactful work.
+
+---
+
+## 💻 Key Values in Action
+
+- **Operational Mastery**: Students develop precision and discipline by setting up and using professional tools like Rust and GitHub Codespaces.
+- **Stewardship**: Every line of code and every step in the process reflects care and responsibility.
+- **Integrity**: Mistakes are embraced as opportunities for growth, and every action is taken with honesty.
+- **Faith-Reason Alignment**: The structured logic of Rust mirrors the broader principles of order and design in creation.
 
 ---
 
 ## 💻 Repository Structure
 
 ```
-/loan_calculator/
+/rust-loan-calculator/
  ├── src/
  │    ├── main.rs        # Core logic and CLI interactions
- ├── README.md           # Project overview, installation, usage
- ├── devcontainer.json   # Pre-configured Codespaces environment (optional for public contributors)
+ ├── README.md           # Project overview, installation, and usage
  ├── Journal/
- │    ├── [Reflection Entries].md  # Student reflections tying real-world projects to ARKTIK values
+ │    ├── [Reflection Entries].md  # Student reflections on lessons and ARKTIK values
  ├── Checkpoints/
- │    ├── [Student Submissions].md # Final working code snapshots
+ │    ├── [Code Snapshots].md      # Working solutions for student assignments
+ ├── .devcontainer/
+ │    ├── devcontainer.json        # Pre-configured Codespaces environment
 ```
 
 ---
 
-## 💻 The Future: ARKTIK Open Knowledge Initiative
+## 💻 How to Get Started
 
-This repository is the **first stone laid** for ARKTIK’s broader vision:  
-building a living library of public, operational projects that reflect the values of **execution, stewardship, mastery, and honor**.
+1. **Set Up Your Environment**:
+   - Launch this repository in GitHub Codespaces for an optimized Rust development environment.
+   - If working locally, ensure Rust, Cargo, and Clippy are installed.
 
-Future expansions may include:
-- Full-stack Rust and WebAssembly projects
-- Applied physics and engineering simulations
-- Financial literacy and micro-economy systems
-- Faith-anchored ethics in AI development
-- Sustainable technology and micro-agriculture systems
+2. **Build and Run the Project**:
+   - Clone the repository and navigate to the `src/` directory.
+   - Compile and run the project using:
+     ```bash
+     cargo build
+     cargo run
+     ```
 
-Each step forward will continue to align with our uncompromising commitment:  
-**to raise builders, not borrowers — creators, not consumers.**
+3. **Reflect and Iterate**:
+   - Use the provided `Journal/` templates to document your learning journey.
+   - Test and enhance your implementation by exploring edge cases and additional features.
+
+4. **Submit Your Work**:
+   - Save your final solution in the `Checkpoints/` directory for review and feedback.
+
+---
+
+## 💻 The ARKTIK Vision: Builders, Not Borrowers
+
+This repository represents the **first step** in ARKTIK’s mission to create a living library of operational projects that blend faith, excellence, and real-world problem-solving.
+
+### Future Expansions May Include:
+- Full-stack Rust and WebAssembly applications.
+- Financial literacy projects with advanced simulations.
+- Engineering and physics challenges.
+- Faith-informed AI ethics and sustainable technology systems.
+
+Each project will align with ARKTIK’s commitment to **raise builders**, not just learners.
 
 ---
 
 ## 💻 How to Support
 
-- **Star this repository** if you believe in mission-driven education.
-- **Share** the project with educators, homeschool families, and innovators who long for better.
-- **Collaborate** by following future ARKTIK open calls for contribution (coming soon).
-- **Pray** for wisdom, clarity, and perseverance for every student, parent, and instructor walking this path.
+- **Star this repository** to show your support for mission-driven education.
+- **Share** this project with educators, innovators, and families seeking meaningful learning experiences.
+- **Collaborate** with us by contributing to future ARKTIK projects.
+- **Pray** for the wisdom, perseverance, and success of every student and educator involved in this mission.
 
 ---
 
 ## 💻 Final Note
 
-This work is not just academic.  
-It is **an act of stewardship**.  
-It is **an offering of excellence** to THE ONE who authored order, reason, and creativity itself.
-
-We invite all who see, hear, and understand to walk with us.
+This work is more than a coding exercise — it is an act of stewardship, a pursuit of excellence, and an offering of honor to the Creator of all.
 
 ---
 
-> _"The highest form of faith is not spoken—  
-> it is built."_  
+> _“The highest form of faith is not spoken—  
+> it is built.”_  
 > — ARKTIK Curriculum for Education
 
 ---
 
-# [💻 Visit ARKTIK Initiative | Learn More](https://arktikinitiative.com)  
+## 💻 License
+
+Content in this repository is released under the **ARKTIK Hybrid Education License v3.0**.  
+Usage is permitted for educational, faith-driven, and non-commercial development purposes only.  
+Refer to the `LICENSE.md` file for full terms.
 
 ---
 
-# README LICENSE:  
-Content released under the **ARKTIK Hybrid Education License v3.0**  
-Usage permitted for educational, faith-driven, and non-commercial development purposes only.  
-Modification and redistribution governed by ARKTIK guidelines. See LICENSE.md for details.
+Let me know if you’d like further refinements or additional sections!
