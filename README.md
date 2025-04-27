@@ -113,7 +113,7 @@ We invite all who see, hear, and understand to walk with us.
 
 ---
 
-# [💻 Visit ARKTIK Initiative | Learn More](https://assemblyoftheark.org)  
+# [💻 Visit ARKTIK Initiative | Learn More](https://arktikinitiative.com)  
 
 ---
 
