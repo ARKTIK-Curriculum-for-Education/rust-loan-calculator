@@ -1,0 +1,32 @@
+{
+  "name": "ARKTIK Rust Environment",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "rustup component add clippy rustfmt && cargo install cargo-watch",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "matklad.rust-analyzer",
+        "serayuzgur.crates",
+        "vadimcn.vscode-lldb",
+        "editorconfig.editorconfig",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "rust-analyzer.checkOnSave.command": "clippy",
+        "rust-analyzer.cargo.allFeatures": true,
+        "rust-analyzer.procMacro.enable": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
