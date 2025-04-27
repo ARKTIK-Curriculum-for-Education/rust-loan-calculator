@@ -1,4 +1,5 @@
 ![License: ARKTIK Hybrid Education v3.0](https://img.shields.io/badge/License-ARKTIK_Hybrid_Education_v3.0-lightgrey.svg)
+> 💻 This repository launches a fully configured Rust development environment inside GitHub Codespaces. No local setup required. Experience ARKTIK’s luxury learning standard.
 
 # Real-World Rust: Algebra in Action  
 **An ARKTIK Curriculum for Education (A.C.E.) Proof of Concept Repository**
