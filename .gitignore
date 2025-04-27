@@ -1,0 +1,51 @@
+# Compiled output
+/target/
+
+# Rust package manager files
+**/*.rs.bk
+Cargo.lock
+
+# Backup and temporary files
+*.bak
+*.swp
+*.tmp
+*.temp
+*.old
+*.orig
+*.rej
+
+# Build artifacts and intermediate files
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Editor-specific files
+# VS Code
+.vscode/
+*.code-workspace
+*.log
+
+# IDEs and editors
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.DS_Store
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+
+# Dependency directories (if used outside of Cargo's /target)
+/node_modules/
