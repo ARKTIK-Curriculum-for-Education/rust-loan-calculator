@@ -1,6 +1,6 @@
 {
   "name": "ARKTIK Rust Environment",
-  "image": "mcr.microsoft.com/devcontainers/rust:1.70",
+  "image": "mcr.microsoft.com/windows-devcontainers/rust:1.70", // Update to a Windows-based image
   "features": {
     "ghcr.io/devcontainers/features/rust:1": {
       "version": "1.70.0"
