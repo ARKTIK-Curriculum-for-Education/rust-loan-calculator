@@ -1,29 +1,28 @@
 {
-  "name": "ARKTIK Rust Environment",
-  "image": "mcr.microsoft.com/windows-devcontainers/rust:1.70", // Update to a Windows-based image
-  "features": {
-    "ghcr.io/devcontainers/features/rust:1": {
-      "version": "1.70.0"
-    }
-  },
-  "postCreateCommand": "rustup component add clippy rustfmt && cargo install --locked cargo-watch",
+  "name": "Rust Loan Calculator",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-bullseye", // Official Rust Dev Container
   "customizations": {
     "vscode": {
       "extensions": [
-        "rust-lang.rust-analyzer",
-        "vadimcn.vscode-lldb",
-        "editorconfig.editorconfig"
-      ],
-      "settings": {
-        "editor.formatOnSave": true,
-        "rust-analyzer.checkOnSave.command": "clippy",
-        "rust-analyzer.cargo.allFeatures": true,
-        "rust-analyzer.procMacro.enable": true,
-        "editor.defaultFormatter": "rust-lang.rust-analyzer",
-        "files.trimTrailingWhitespace": true,
-        "files.insertFinalNewline": true
-      }
+        "rust-lang.rust-analyzer", // Rust Analyzer for IDE support
+        "vadimcn.vscode-lldb", // Debugging support
+        "serayuzgur.crates", // Dependency management
+        "editorconfig.editorconfig" // Consistent file formatting
+      ]
     }
   },
-  "remoteUser": "nonroot"
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+    "ghcr.io/devcontainers/features/common-utils:1": {}
+  },
+  "postCreateCommand": "cargo install cargo-edit && cargo install cargo-audit",
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "forwardPorts": [3000], // Example for running a web server
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached"
+  ]
 }
