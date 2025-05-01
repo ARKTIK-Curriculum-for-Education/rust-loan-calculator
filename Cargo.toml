@@ -1,0 +1,48 @@
+[package]
+name = "rust-loan-calculator"
+version = "0.1.0"
+edition = "2021"
+authors = ["ARKTIK Curriculum for Education <j.morris@arktikeducation.orgm>"]
+description = "A Rust-based proof of concept for A.C.E. Lesson Meta: Integrated Math I - Algebraic Foundations & Computational Logic."
+license = "MIT"
+repository = "https://github.com/ARKTIK-Curriculum-for-Education/rust-loan-calculator"
+keywords = ["education", "mathematics", "computational-logic", "loan-calculator"]
+categories = ["education", "science", "mathematics"]
+readme = "README.md"
+homepage = "https://ARKTIKeducation.org"
+documentation = "https://ARKTIKeducation.org/docs/rust-loan-calculator"
+
+[dependencies]
+# Add core dependencies for your project
+serde = { version = "1.0", features = ["derive"] } # For serialization/deserialization
+serde_json = "1.0" # For handling JSON data
+clap = { version = "4.0", features = ["derive"] } # For command-line interface parsing
+thiserror = "1.0" # For better error management
+chrono = "0.4" # For handling dates and times
+
+# Optional dependencies for advanced mathematics
+num = "0.4" # For numeric computations
+num-rational = "0.4" # For rational number calculations
+
+[dev-dependencies]
+# Add dependencies for development and testing
+pretty_assertions = "1.4" # For better assertion messages in tests
+tokio = { version = "1.0", features = ["full"] } # For async runtime during testing
+
+[features]
+# Define optional features for your project with conditional dependencies
+default = ["cli", "math"]
+cli = ["clap"]
+math = ["num", "num-rational"]
+
+[profile.release]
+# Optimize for performance
+opt-level = 3
+lto = "fat"
+debug = false
+codegen-units = 1
+panic = "abort"
+
+[workspace]
+# For managing multiple sub-crates if needed in the future
+members = ["."]
